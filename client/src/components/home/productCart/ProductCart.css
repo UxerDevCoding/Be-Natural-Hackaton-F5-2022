@@ -1,0 +1,75 @@
+.card {
+  align-items: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+  margin: max(10px, 3vh);
+  width: 25vw;
+}
+.card img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  max-height: 50%;
+}
+.card-body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-around;
+}
+#icard {
+  width: 100%;
+}
+.card-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.boder {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#star {
+  display: flex;
+  justify-content: center;
+}
+#star img {
+  width: 10%;
+}
+#price {
+  font-size: 1.3rem;
+  margin: 10px;
+}
+#botonplan {
+  background-color: var(--colorButtonMenuAll);
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  width: 10vw;
+}
+#botonplan a {
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+#botonplan a:hover{
+  color: black;
+}
+.containerCards {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+}
+@media (max-width: 480px){
+    .card {width: 70vw;}
+    #botonplan { width: 30vw;}
+}
+@media (min-width: 480px) and (max-width: 780px){
+    .card {width: 35vw;}
+    #botonplan { width: 18vw;}
+}

@@ -1,0 +1,20 @@
+package net.javaguides.springboot.benatural.model;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import javax.annotation.PostConstruct;
+import java.util.List;
+
+@Component
+public class SampleDataLoader {
+    private ProductRepository productRepository;
+    @Autowired
+    public SampleDataLoader(ProductRepository productRepository) {
+        this.prodcutRepository = productRepository;
+    }
+    @PostConstruct
+    public void loadSampleData() {
+        productRepository.saveAll(List.of(
+        new product ( "Serum","Say hello to our Facial Recovery Serum! Our hydrating, nutrient filled Facial Recovery Serum has a light consistency for speedy absorption, and infuses detoxifying Super Green extracts of Kale, Spirulina and Parsley", "https://drive.google.com/uc?export=download&id=1vN_0DKf8jKNfpvAdZlpZEEfzUuDEJNha","Facial Recover Serum", "50"),
+        new product ("Moisturizer", "Our Nutrient Rich Facial Moisturizer is perfect for you! It is enriched with Super Greens extracts of Kale, Spirulina, Parsley and Chlorella to give your skin a nutrient boost to promote a radiant, glowing and healthy complexion.", "https://drive.google.com/uc?export=download&id=1kqTzBL9ckihr9MSpveHLExZHyJkrFSOh","Nutrient Rich Facial", "60")
+        ));
+    }

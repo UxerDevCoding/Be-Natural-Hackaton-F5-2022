@@ -1,0 +1,49 @@
+:root{
+    --colorFooter:#1F1130;
+    --colorTextWhite:#fff;
+    --colorBackground:#FAF6F6;
+    --colorTextBlack:#000;
+    --colorNavbar: #c4c4c42a;
+    --colorLogin: #97d411;
+    --colorLoginHover:#6D9616;
+    --colorBorderMenuNav: #25005524;
+    --colorTextMenu:#250055;
+    --colorButtonMenu:#a68ec58f;
+    --colorButtonMenuAll:#97d711e8;
+    --colorBackgroundProductCart: #F4F4F4;
+    --colorProductName:#00534A;
+    --colorBackgroundModal:#00463de8;
+    --colorProductCategory:#250055;
+}
+*, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100vw;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+  ::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px var(--colorTextBlack);
+    border-radius: 10px;
+    background-color: var(--colorNavbar);
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--colorButtonMenu);
+  }
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+}

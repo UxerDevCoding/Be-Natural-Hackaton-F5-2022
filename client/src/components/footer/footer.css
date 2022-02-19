@@ -1,0 +1,99 @@
+footer {
+  background-color: var(--colorFooter);
+  color: var(--colorTextWhite);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+footer .footerLogos {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: max(10px, 2vh);
+  width: 100%;
+}
+footer .footerLogos .footerLogoAdevinta {
+  align-items: center;
+  display: flex;
+  justify-content: left;
+  width: 50%;
+}
+footer .footerLogos .footerLogoAdevinta img {
+  width: 200px;
+}
+footer .footerLogos .footerSocialMedia {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
+}
+footer .footerLogos .footerSocialMedia a {
+  color: var(--colorTextWhite);
+  display: flex;
+}
+footer .footerLogos .footerSocialMedia a img {
+  width: 40px;
+}
+footer .footerComplement {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: max(10px, 2vh);
+  width: 100vw;
+  cursor: default;
+}
+footer .footerInfoLinks {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+}
+
+footer .footerComplement .footerInfoAdevinta p{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+footer .footerInfoLinks a {
+  align-items: center;
+  display: flex;
+  color: var(--colorTextWhite);
+  text-decoration: none;
+}
+footer .footerInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: max(15px, 2vh);
+  width: 90%;
+  cursor: default;
+}
+
+footer .footerInfo p{word-wrap: break-word;}
+
+@media (max-width: 480px){
+  footer .footerLogos {flex-direction: column; align-items: center;}
+  footer .footerLogos .footerLogoAdevinta {width: 90%;}
+  footer .footerLogos .footerSocialMedia {width: 90%;}
+  footer .footerLogos .footerSocialMedia a img {
+    width: 25px;
+  }
+  footer .footerComplement{ flex-direction: column; width: 100%;}
+  footer .footerInfoLinks {width: 90vw;}
+  footer .footerComplement {flex-direction: column;}
+  footer .footerInfoLinks {width: 90vw; flex-wrap: wrap; justify-content: space-around;}
+  footer a{ font-size: 0.6rem;margin: 3px;}
+  footer{text-align: center;}
+  footer .footerLogos .footerLogoAdevinta img {
+    width: 80%;
+  }
+  footer{padding: 15px;}
+}
+@media (min-width: 481px) and (max-width: 769px) {
+  footer .footerComplement{ flex-direction: column; width: 100%;}
+  footer .footerInfoLinks {width: 90vw;}
+  footer .footerLogos .footerSocialMedia {width: 50%;}
+  footer .footerLogos .footerSocialMedia a img {
+    width: 30px;
+  }
+}

@@ -1,0 +1,61 @@
+#black_hole{
+  min-height: 100px;
+  color: transparent;
+
+}
+.menuHome {
+  align-items: center;
+  border-radius: 16px;
+  border: 5px solid var(--colorBorderMenuNav);
+  box-sizing: border-box;
+  color: var(--colorTextMenu);
+  display: flex;
+  justify-content: space-around;
+  margin: 5vh;
+  padding: 15px;
+  width: 90vw;
+  height: 10vh;
+}
+.menuHome ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  width: 80vw;
+  margin-bottom: 0%;
+}
+.menuHome ul button {
+  background-color: var(--colorButtonMenu);
+  border-radius: 14px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  margin: 5px;
+  min-width: 60px;
+  padding: 10px;
+  cursor: pointer;
+  height: 7vh;
+}
+.menuHome ul button.all {
+  background-color: var(--colorButtonMenuAll);
+}
+.menuHome h4 {
+  cursor: default;
+}
+@media (max-width: 480px) {
+  .menuHome {
+    flex-direction: column;
+    height: 30vh;
+  }
+}
+@media (min-width: 1580px){
+  .menuHome {
+    flex-direction: row;
+  }
+  .menuHome ul {
+    height: 15vh;
+ }
+  .menuHome ul button {
+     height: 4vh;
+  }
+}

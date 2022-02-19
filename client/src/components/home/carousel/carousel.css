@@ -1,0 +1,214 @@
+.carouselExampleControls{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+   } 
+   .carousel-inner {
+     height: 100%;
+     flex-wrap: nowrap;
+     width: 100vw;
+     display: flex;  
+     align-items: center; 
+   }
+#carrusel1{
+    background-image: url(../../../assets/img/fondo_.png);
+    min-width: 95%;
+    min-height: 376px;
+    max-height: 480px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  #parrafo{
+   z-index: 1;
+   width: 60%; 
+   height: 40%; 
+   border: 2px solid #E9B76B;  
+   background-color: #17222373;
+   border-radius: 15px;
+  }
+  .parra_title{
+      color: #bc8cf7;
+      text-align: center;
+      padding-top: 25px;
+      font-size: 2.2rem;
+  }
+
+  .parra_par{
+      font-size: 1.7rem;
+      color: #e0dbdb;
+      text-align: center;
+      padding: 15px;
+  }
+  #second_item{
+    display: flex;
+    min-width: 95%; 
+    height: 60%; 
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: #c4c4c473;
+    min-height: 376px;
+    max-height: 376px;  
+  }
+  .image_sitem{
+      width: 60%;
+      display: flex;
+      justify-content:flex-end;
+      align-items: center;
+   }
+  #second_item img{
+   width: 70%;
+   height: 62vh;
+  }
+  #second_parra{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10%;
+  }
+  .title_seller{
+      color: var(--colorProductName);
+  }
+  .name_seller{
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0%;
+  }
+  .off_price{
+    color:#574878;
+    font-size: 1.2rem;
+  }
+
+  #carru_btn{
+    background-color: var(--colorButtonMenuAll);
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  #carru_btn a{
+    color: white;
+    text-decoration: none;
+  }
+  #carru_btn a:hover{
+    color: var(--colorButtonMenuAll);
+    text-decoration: none;
+  }
+  #carru_btn:hover{
+    background-color: white;
+    border: 2px solid var(--colorButtonMenuAll);
+    color: var(--colorButtonMenuAll);
+    }
+
+  #carrusel2{
+    background-image: url(../../../assets/img/eternals.png);
+    min-width: 95%;
+    min-height: 376px;
+    max-height: 376px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    #parra_second{
+      background-repeat: no-repeat;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-left: 10%;
+  }
+  .third_title{
+      color: var(--colorProductName);
+  }
+  .yoga{
+      color: var(--colorButtonMenuAll);
+  }
+  #box_yoga{
+     
+      text-align: center;
+  }
+
+  @media (max-width: 480px){
+    .parra_title{
+      color: #bc8cf7;
+      text-align: center;
+      padding-top: 25px;
+      font-size: 1.2rem;
+    }
+    .parra_par{
+        font-size: 1rem;
+        color: #e0dbdb;
+        text-align: center;
+        padding: 15px;
+    }
+    .name_seller{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0%;
+    }
+    .off_price{
+    color:#574878;
+    font-size: 0.8rem;
+    }
+    #second_parra{
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    background-color: hsla(0, 7%, 87%, 0.35);
+    }
+    .image_sitem{
+    width: 90%;
+    display: flex;
+    position: relative;
+    justify-content:center;}
+
+    
+    #parra_second{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+    }
+    }
+    @media (min-width: 1580px){
+      #carrusel1{
+        min-height: 600px;
+        max-height: 600px;
+       
+      }
+      #second_item{
+        min-width: 95%; 
+        min-height: 600px;
+        max-height: 600px;  
+      }
+      .image_sitem{
+        width: 80%;
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+     }
+    #second_item img{
+     width: 100%;
+     height: 62vh;
+    }
+    #carrusel2{
+      background-repeat: no-repeat;
+      min-height: 600px;
+      max-height: 600px;
+         }
+    }

@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "segoesc";
+  font-style: normal;
+  font-weight: none;
+  src: url("../../assets/fonts/segoesc.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nirmala";
+  font-style: normal;
+  font-weight: none;
+  src: url("../../assets/fonts/Nirmala.ttf") format("truetype");
+}
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+header {
+  align-items: center;
+  background-color: var(--colorBackground);
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0%;
+}
+.banner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+.banner .logoCompany {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.banner .logoCompany img {
+  width: 30px;
+  transform: rotate(25deg);
+}
+.banner h1 {
+  color: var(--colorTextBlack);
+  font-family: "segoesc";
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  font-size: 2rem;
+}
+.banner h4 {
+  color: var(--colorTextBlack);
+  font-family: 'Gideon Roman', cursive;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  font-size: 0.8rem;
+}
+header .navbar{
+  background-color: var(--colorNavbar);
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  justify-content: space-around;
+}
+header .navbar ul.navbarUl{
+  display: flex;
+  margin: 10px;
+  width: 60%;
+  justify-content: space-evenly;
+  color: #250055;
+}
+header .navbar ul.navbarUl a{
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  }
+header .navbar ul.navbarUl a:hover{
+  color: #6D9616;
+}
+header .navbar ul.navbarUl a:link{
+  color: #250055;
+}
+header .navbar ul.navbarUl a:visited{
+  color: #250055;
+}
+header .navbar button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--colorLogin);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: none;
+}
+header .navbar button img{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: all .2s ease-in-out;
+}
+header .navbar button img:hover{
+  transform: scale(1.1);
+}
+@media (max-width: 480px){
+  header .navbar{justify-content: space-between; padding: 2px;}
+  header .navbar ul.navbarUl {width: 80%; margin:0; padding:0};
+}

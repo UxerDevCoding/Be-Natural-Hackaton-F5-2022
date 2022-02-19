@@ -1,0 +1,143 @@
+#white_hole{
+    min-height: 20vh;
+    color: transparent;
+}
+#formu_contacto, .feedback{
+    max-width: 100%;
+    width: 100%;
+    font-size: 12px;
+    color: gray;
+    margin-top: 2px;
+    margin-bottom: -10px;
+    }
+
+h1{
+
+    color:var(--colorProductCategory);
+    font-size: 2rem;
+    text-align: center;
+    padding:10px;
+}
+
+h2 {
+    font-weight: 400;
+    color: #4caf50;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+}
+h2:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    top: 22px;
+    background: #4caf50;
+    height: 1px;
+}
+h2 i {
+    font-style: normal;
+    background: #fff;
+    position: relative;
+    padding: 10px;
+}
+:focus{outline: none;}
+
+/* necessary to give position: relative to parent. */
+input[type="text"]{
+     color: #333;
+    width: 100%; 
+     box-sizing: border-box;
+    }
+
+
+.col-3{
+    float: left;
+    width: 44%;
+    margin: 40px 3%;
+    position: relative;
+    } /* necessary to give position: relative to parent. */
+
+input[type="text"]{
+      color: #333; 
+     width: 100%; 
+     box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+
+.effect-16{
+    border: 0px; 
+    padding: 10px 5px;
+    border-bottom: 3px solid #ccc;
+    background-color: transparent;
+    }
+
+.effect-16 ~ .focus-border{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: #7f3985;
+    transition: 0.4s;
+    }
+
+.effect-16:focus ~ .focus-border,.has-content.effect-16 ~ .focus-border{
+        width: 100%;
+        transition: 0.4s;
+        }
+
+.effect-16 ~ label{
+    position: absolute;
+    left: 25px;
+    width: 100%;
+    top: 10px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -3;
+    letter-spacing: 0.5px;
+    }
+
+.effect-16:focus ~ label, .has-content.effect-16 ~ label{
+    top: -16px;
+    font-size: 15px;
+    color: #00534A; 
+    transition: 0.3s;
+    }
+
+
+ .feedback{
+    max-width: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    color: gray;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    }
+#boton_enviar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+#boton_enviar button{
+    width: 130px;
+    height: 35px; 
+    color:white;
+    max-width: 250px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: #97d711e8;
+    cursor: pointer;
+    border-color:#97d711e8;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+
+#boton_enviar button:hover{
+    border-color:#97d711e8;
+    color:#97d711e8;
+    background-color: white;
+}
+

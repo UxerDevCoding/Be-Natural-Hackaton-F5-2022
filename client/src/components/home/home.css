@@ -1,0 +1,15 @@
+.home{
+    display: flex;
+    background-color: var(--colorBackground);
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .home{
+        margin-top: 25vh;
+    }
+    }
